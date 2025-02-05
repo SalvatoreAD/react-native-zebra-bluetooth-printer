@@ -36,8 +36,11 @@ repositories {
     mavenCentral()
 }
 
+def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('../node_modules/react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+
+
 dependencies {
-    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.facebook.react:react-native:' + REACT_NATIVE_VERSION
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
 }
