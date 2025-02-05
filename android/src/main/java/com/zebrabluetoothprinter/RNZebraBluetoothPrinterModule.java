@@ -1,25 +1,18 @@
 
 package com.zebrabluetoothprinter;
 
-import com.facebook.react.bridge.Callback;
-import android.widget.Toast;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.BroadcastReceiver;
 import android.bluetooth.BluetoothClass;
-import com.facebook.react.bridge.UiThreadUtil;
 import android.content.Context;
 import android.content.Intent;
-import java.util.Iterator;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
-import android.bluetooth.le.ScanCallback;
 import android.util.Log;
-import android.widget.BaseAdapter;
-import org.json.JSONException;
+
 import com.facebook.react.bridge.*;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import org.json.JSONArray;
@@ -43,11 +36,9 @@ import com.zebra.sdk.comm.BluetoothConnection;                                  
 import com.zebra.sdk.comm.Connection;
 import com.zebra.sdk.printer.PrinterStatus;
 import com.zebra.sdk.comm.ConnectionException;
-import com.zebra.sdk.printer.PrinterLanguage;
 import com.zebra.sdk.printer.SGD;
 import com.zebra.sdk.printer.ZebraPrinter;
 import com.zebra.sdk.printer.ZebraPrinterFactory;
-import com.zebra.sdk.printer.discovery.DiscoveredPrinter;
 
 public class RNZebraBluetoothPrinterModule extends ReactContextBaseJavaModule implements ActivityEventListener,BluetoothServiceStateObserver {
 
