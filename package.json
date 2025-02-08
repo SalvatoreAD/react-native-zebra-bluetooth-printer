@@ -17,10 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/SalvatoreAD/react-native-zebra-bluetooth-printer"
   },
-  "author": "Anmol Jain <anmol@geekyants.com>",
-  "contributors": [
-    "Aditya Kumar <adityak@geekyants.com>"
-  ],
+  "author": "Salvatore Addesa <salvatore.addesa@magaldinnova.it>",
   "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.2",
