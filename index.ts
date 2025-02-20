@@ -10,10 +10,7 @@ export type ZebraDevice = {
 type RNZebraBluetoothPrinterType = {
   isEnabledBluetooth(): Promise<boolean>;
   enableBluetooth(): Promise<string>;
-  scanDevices(): Promise<{
-    paired: ZebraDevice[];
-    found: ZebraDevice[];
-  }>;
+  scanDevices(): Promise<string>;
   disableBluetooth(): Promise<boolean>;
   pairedDevices(): Promise<ZebraDevice[]>;
   unpairDevice(deviceAddress: String): Promise<string>;

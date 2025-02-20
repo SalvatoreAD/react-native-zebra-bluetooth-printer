@@ -3,10 +3,7 @@ declare module 'react-native' {
     RNZebraBluetoothPrinter: {
       isEnabledBluetooth(): Promise<boolean>;
       enableBluetooth(): Promise<string>;
-      scanDevices(): Promise<{
-        paired: { name: string; address: string }[];
-        found: { name: string; address: string; class: any; type: string }[];
-      }>;
+      scanDevices(): Promise<string>;
       disableBluetooth(): Promise<boolean>;
       pairedDevices(): Promise<
         { name: string; address: string; class: any; type: string }[]
