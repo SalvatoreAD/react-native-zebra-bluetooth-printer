@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
-type ZebraDevice = {
-  name: string;
+export type ZebraDevice = {
+  name?: string;
   address: string;
   class?: any;
   type?: string;
